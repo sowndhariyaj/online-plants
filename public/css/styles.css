@@ -1,0 +1,591 @@
+/* Home */
+
+.body {
+    /* background-image: url("images/back.jpg"); */
+    background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../pictures/back.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    font-family: "Rubik", sans-serif;
+}
+
+.store-name {
+    margin-top: 18%;
+    margin-left: 28%;
+    position: absolute;
+    /* position: relative;
+    top : 40%;
+    left:40%; */
+    
+    color: #ddd;
+    font-family: 'PT Serif', serif;
+    /* font-family: "Rubik", sans-serif; */
+}
+
+.order-btn1 {
+    margin: 30% 0 0 30%;
+}
+
+.order-btn2 {
+    margin: 30% 0 0 10%;
+}
+
+.nav-item {
+    font-weight: bolder;
+    color: aliceblue;
+}
+
+.headding1 {
+    text-align: center;
+    margin-top: 2%;
+    padding-top: 2%;
+}
+
+.overview {
+    /* font-family: 'EB Garamond', serif; */
+    font-family: "Rubik", sans-serif;
+    font-size: 130%;
+    margin-left: 20%;
+    margin-top: 5%;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8%;
+}
+
+.delivery {
+    width: 60%;
+    margin: 5% 0 0 35%;
+}
+
+.bot-btn1 {
+    margin-left: 35%;
+    margin-top: 5%;
+}
+
+.bot-btn2 {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.bod2 {
+    background-color: #ffffff;
+    /* background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png"); */
+}
+
+.cont {
+    background-color: white;
+}
+
+
+/* Product Page */
+
+.ProductHeading {
+    margin-top: 5%;
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.productButton {
+    text-align: center;
+    border-style: groove;
+    background-color: rgb(255, 255, 255);
+    /* font-family: 'Merriweather', serif; */
+    font-weight: bold;
+    font-family: "Rubik", sans-serif;
+}
+
+.productButton p {
+    margin-bottom: 0;
+    padding: 2% 2%;
+}
+
+.copyright {
+    text-align: center;
+    margin: 2% 0;
+}
+
+.ProductsItems div {
+    margin-bottom: 2%;
+}
+
+.remove {
+    display: none;
+}
+
+.mov{
+    margin-left: 100px;
+}
+
+/* login */
+
+.login__field {
+    padding: 20px 0px;
+    position: relative;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+    outline: none;
+    border-bottom-color: #6A679E;
+    border-bottom-color: #000000;
+}
+
+.login__input {
+    border: none;
+    border-bottom: 2px solid #910000;
+    border-bottom: 2px solid #af0000;
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    font-weight: 700;
+    width: 70%;
+    transition: .2s;
+    text-align: center;
+}
+
+.login__inputVote {
+    border: none;
+    border-bottom: 2px solid #910000;
+    border-bottom: 2px solid #af0000;
+    background: none;
+    padding: 10px;
+    padding-left: 24px;
+    font-weight: 700;
+    width: 70%;
+    transition: .2s;
+    text-align: center;
+}
+
+.ProfileUpdateHead {
+    margin: 2% 35%;
+    text-align: center;
+    color: aliceblue;
+}
+
+.loginBG {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/brick-wall.png");
+    font-family: "Rubik", sans-serif;
+}
+
+.loginbtn {
+    padding: 2% 15%;
+    font-family: "Rubik", sans-serif;
+}
+
+.AllHeading {
+    padding-top: 20%;
+}
+
+.AllHeadingAdmin {
+    padding-top: 7%;
+}
+
+.modalBtn {
+    margin: auto;
+}
+
+.QuaHead {
+    /* font-family: 'Arvo'; */
+    font-family: "Rubik", sans-serif;
+}
+
+
+/* contact body */
+
+.contact-bod {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../pictures/contact.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 90vh;
+    background-position-y: 40%;
+}
+
+.con {
+    padding-top: 7%;
+    padding-left: 6%;
+}
+
+.con .content .right-side {
+    width: 75%;
+    margin-left: 75px;
+}
+
+.content .right-side .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.right-side .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #efefeb;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .message-box {
+    min-height: 110px;
+}
+
+.right-side .input-box textarea {
+    padding-top: 6px;
+}
+
+.right-side .button {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.right-side .button input[type="button"] {
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input[type="button"]:hover {
+    background: #5029bc;
+}
+
+@media (max-width: 950px) {
+    .con {
+        width: 90%;
+        padding: 30px 40px 40px 35px;
+    }
+    .con .content .right-side {
+        width: 75%;
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 820px) {
+    .con {
+        margin: 40px 0;
+        height: 100%;
+    }
+    .con .content {
+        flex-direction: column-reverse;
+    }
+    .con .content .right-side {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.input-box {
+    opacity: 60%;
+}
+
+.map {
+    margin-left: 9%;
+    margin-top: 1%;
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.contact-head {
+    margin-top: 5%;
+    position: relative;
+    /* font-family: 'EB Garamond', serif;*/
+    font-family: "Rubik", sans-serif;
+} 
+
+.errorMsg {
+    margin: 0 25%;
+}
+
+.removerBorder {
+    border: 0ch;
+    background: none;
+}
+
+.removerBorder:hover,
+.productButton:hover {
+    cursor: pointer;
+}
+
+.selectedItem {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+/* cart */
+
+.cart-bod {
+    /* background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1)); */
+    background-size: cover;
+}
+
+.cart-item {
+    border: 1px solid white;
+    color: rgb(82, 82, 82);
+    border-radius: 5px;
+    background-color: white;
+    padding: 5%;
+    margin-top: 10%;
+}
+
+.cart-summary {
+    border: 1px solid white;
+    color: rgb(82, 82, 82);
+    border-radius: 5px;
+    background-color: white;
+    padding: 5%;
+    margin-top: 15%;
+}
+
+
+/* logo */
+
+.logo {
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 7% 25% 0 25%;
+    padding: 5%;
+    font-family: 'Unna', serif;
+    background-color: white;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.contactTail {
+    margin: 5% 0;
+}
+
+
+/* Hover */
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    /* background-color: #04AA6D; */
+    /* color: white; */
+    /* padding: 16px; */
+    /* font-size: 16px; */
+    border: none;
+    background: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    background: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #00000062;
+    color: #ddd;
+    border-radius: 2rem;
+}
+
+.inpRemove {
+    border: none;
+}
+
+.inpRemove::placeholder {
+    color: #af0000;
+}
+
+.cart-summary h5,
+.inpRemove {
+    color: #af0000;
+}
+
+.cart-summary b {
+    color: #000000;
+}
+
+.removea {
+    font-style: none;
+    color: white;
+}
+
+.removea:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/* Delivery Status */
+
+.deliveryStsbrd {
+    /* padding: 0 30%; */
+}
+
+.innerBorder {
+    text-indent: 5%;
+    text-align: left;
+    padding: 7% 0;
+    background-color: #c70700;
+    /* background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png"); */
+}
+
+.deliveryStsbrd h3 b {
+    color: #ddd;
+    font-family: 'Charis SIL', serif;
+    font-weight: bolder;
+}
+
+.deliveryCard {
+    text-indent: 5%;
+    font-family: 'Tai Heritage Pro', serif;
+}
+
+.deliveryCard h3 b {
+    font-weight: bolder;
+}
+
+.deliveryGrigGap {
+    padding: 0 2%;
+}
+
+.equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+
+/* ToDelivery  - Card*/
+
+.QuaHead {
+    color: darkblue;
+}
+
+.card {
+    font-family: 'Bree Serif';
+    color: #000268;
+    background: transparent;
+    box-shadow: 5px 2px 10px rgb(49, 49, 49);
+}
+
+.card:hover {
+    box-shadow: 5px 2px 20px rgb(49, 49, 49);
+}
+
+.cardWhole {
+    text-align: center;
+    padding: 3% 3%;
+}
+
+.cardHeader {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-top: 2%;
+}
+
+.cardBody {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.CardIcons {
+    background-color: white;
+    color: darkblue;
+    padding: 3% 3%;
+    border-radius: 1rem;
+    font-size: larger;
+    /* background-image: url("https://www.transparenttextures.com/patterns/diamond-eyes.png"); */
+}
+
+.far {
+    color: darkblue;
+}
+
+.cardText {
+    color: #000268;
+    margin-left: 5%;
+}
+
+.cardList {
+    margin: 5% 0;
+}
+
+.skillEnd {
+    margin-bottom: 5%;
+}
+
+.EventRegsButton {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.addButton {
+    color: black;
+}
+
+.addButton:hover {
+    color: rgb(0, 0, 182);
+}
+
+.cardList input {
+    text-align: right;
+}
+
+.modelBackGroung {
+    /* color: rgb(158, 157, 157); */
+    /* background-image: url("https://www.transparenttextures.com/patterns/diamond-eyes.png"); */
+}
+
+.cartNum {
+    padding: 2% 2%;
+    margin-left: 1%;
+    background-color: #000000;
+    color: rgb(219, 164, 0);
+    border-radius: 10rem;
+}

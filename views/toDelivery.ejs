@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- bootstrap links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- BootStrap Script links -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/8bbe7ed51b.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+
+</head>
+
+<body class="loginBG">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgba(0, 0, 0, 0.644);">
+        <a class="navbar-brand text-light" href="#" style="font-family: 'Spartan', sans-serif;">THE GREEN THUMB </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto ">
+                <li class="nav-item">
+                    <a class="nav-link mr-3 ml-2 text-light" href="/admin">USER LOGS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-3 ml-2 text-light" href="/delivery">DELIVERY</a>
+                </li>
+            </ul>
+
+            <%if(username.length!=0){%>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <i class="fa-solid fa-user text-warning">  <%=username%></i>                        
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/logoutAdmin">Log Out</a>
+                    </div>
+                </div>
+                <%}%>
+
+        </div>
+
+    </nav>
+
+    <!-- heading -->
+    <section>
+        <div>
+            <section class="home col-lg-12 AllHeadingAdmin">
+
+                <div class="welcomeDivAdmin">
+                    <h1 class=" text-center"> <span class="QuaHead">User Logs</span>
+                    </h1>
+                    <div class="pl-5 pr-5">
+                        <hr class="text-dark border border-1">
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+    <section class="home col-lg-12">
+        <!-- Main Event-->
+        <div class="row">
+
+            <% userArray.forEach(e => { %>
+                <div class="col-lg-3 col-md-3 cardWhole" data-aos="flip-right" data-aos-duration="1000">
+                    <div class="card">
+                        <div class="cardHeader"> <%=e.userid>
+                            <form action="/updateDelivery" method="post">
+                                <input type="hidden" name="id" value="">
+                                <button type="submit " class="btn btn-danger">Delivered</button>
+                            </form>
+                            <hr>
+                        </div>
+
+                        <div class="cardBody ">
+                            <div class="cardList ">
+                                <i class="far fa-clock CardIcons "></i> <span class="cardText "> Delivery Date - <%=e.delivery%></span>
+                            </div>
+
+                            <div class="cardList ">
+                                <i class="fa-solid fa-indian-rupee-sign CardIcons"></i> <span class="cardText "> Total Price: - asdasd</span>
+                            </div>
+                            <div class="cardList ">
+                                <i class="fas fa-envelope-open-text CardIcons "></i> <span class="cardText "> Address - asdasd</span>
+                            </div>
+
+                            <div class="EventRegsButton ">
+                                <form action="/enrollmentView" method="post">
+                                    <input type="hidden" name="eventName" value="asd">
+                                    <button type="submit" class="btn btn-outline-primary">View Orders</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+
+        </div>
+    </section>
+
+
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+
+</body>
+
+</html>
